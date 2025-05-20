@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Profiles - LoveLink</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="famegy">
+    <header class="header" style="height: 70px;overflow: auto;">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="heart-icon">❤</span>LoveLink
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="browse.html" class="active">Browse</a></li>
+                    <li><a href="matches.html">Matches</a></li>
+                    <li><a href="messages.html">Messages</a></li>
+                    <li><a href="profile.html">My Profile</a></li>
+                </ul>
+                <div class="nav-user">
+                    <div class="user-menu">
+                        <img src="my pictures/WhatsApp Image 2025-05-20 at 10.20.59_8c5fbf4d.jpg" alt="User" class="user-avatar" width="10px">
+                        <i class="fas fa-chevron-down"></i>
+                        <div class="dropdown-menu">
+                            <a href="profile.html">Profile</a>
+                            <a href="settings.html">Settings</a>
+                            <a href="premium.html">Upgrade to Premium</a>
+                            <a href="logout.html">Log Out</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="browse-page">
+        <div class="container">
+            <div class="browse-container">
+                <div class="browse-filters">
+                    <h2>Filters</h2>
+                    <div class="filter-section">
+                        <h3>Distance</h3>
+                        <div class="distance-filter">
+                            <input type="range" min="1" max="100" value="50" class="slider" id="distance-slider">
+                            <span id="distance-value">50 miles</span>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-section">
+                        <h3>Age Range</h3>
+                        <div class="age-filter">
+                            <div class="age-inputs">
+                                <input type="number" min="18" max="99" value="25" id="min-age">
+                                <span>to</span>
+                                <input type="number" min="18" max="99" value="45" id="max-age">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-section">
+                        <h3>Gender</h3>
+                        <div class="gender-filter">
+                            <label><input type="checkbox" checked> Men</label>
+                            <label><input type="checkbox" checked> Women</label>
+                            <label><input type="checkbox"> Other</label>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-section">
+                        <h3>Interests</h3>
+                        <div class="interests-filter">
+                            <input type="text" placeholder="Search interests...">
+                            <div class="selected-interests">
+                                <span class="interest-tag">Travel <i class="fas fa-times"></i></span>
+                                <span class="interest-tag">Music <i class="fas fa-times"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary btn-block">Apply Filters</button>
+                    <button class="btn btn-outline btn-block">Reset Filters</button>
+                </div>
+                
+                <div class="browse-results">
+                    <div class="search-header">
+                        <h2>Profiles Near You</h2>
+                        <div class="search-sort">
+                            <select>
+                                <option>Newest First</option>
+                                <option>Distance</option>
+                                <option>Compatibility</option>
+                                <option>Last Active</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="profile-grid">
+                        <!-- Profile cards would be dynamically loaded from backend which we havent covered by now  -->
+                        <div class="profile-card">
+                            <div class="profile-image">
+                                <img src="my pictures/WhatsApp Image 2025-05-20 at 10.34.05_4e2b9ea5.jpg" alt="Profile">
+                                <div class="online-status online"></div>
+                                <div class="profile-actions">
+                                    <button class="btn-like"><i class="fas fa-heart"></i></button>
+                                    <button class="btn-message"><i class="fas fa-comment"></i></button>
+                                </div>
+                            </div>
+                            <div class="profile-info">
+                                <h3>Sarah, 28</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> 5 miles away</p>
+                                <div class="profile-bio">
+                                    <p>Adventure seeker and photography enthusiast looking for someone to explore the world with.</p>
+                                </div>
+                                <div class="interests">
+                                    <span class="interest-tag">Travel</span>
+                                    <span class="interest-tag">Photography</span>
+                                    <span class="interest-tag">Hiking</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="profile-card">
+                            <div class="profile-image">
+                                <img src="my pictures/WhatsApp Image 2025-05-20 at 10.34.04_e148215f.jpg" alt="Profile">
+                                <div class="online-status offline"></div>
+                                <div class="profile-actions">
+                                    <button class="btn-like"><i class="fas fa-heart"></i></button>
+                                    <button class="btn-message"><i class="fas fa-comment"></i></button>
+                                </div>
+                            </div>
+                            <div class="profile-info">
+                                <h3>Agnes, 28</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> 12 miles away</p>
+                                <div class="profile-bio">
+                                    <p>Professional chef who loves cooking Italian cuisine and watching sports on weekends.</p>
+                                </div>
+                                <div class="interests">
+                                    <span class="interest-tag">Cooking</span>
+                                    <span class="interest-tag">Sports</span>
+                                    <span class="interest-tag">Wine</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="profile-card premium-profile">
+                            <div class="premium-badge">Premium</div>
+                            <div class="profile-image">
+                                <img src="my pictures/WhatsApp Image 2025-05-20 at 10.51.53_f3edcc5f.jpg" alt="Profile">
+                                <div class="online-status online"></div>
+                                <div class="profile-actions">
+                                    <button class="btn-like"><i class="fas fa-heart"></i></button>
+                                    <button class="btn-message"><i class="fas fa-comment"></i></button>
+                                </div>
+                            </div>
+                            <div class="profile-info">
+                                <h3>Jessica, 26</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> 8 miles away</p>
+                                <div class="profile-bio">
+                                    <p>Music teacher who plays piano and loves going to concerts. Looking for someone who shares my passion for music.</p>
+                                </div>
+                                <div class="interests">
+                                    <span class="interest-tag">Music</span>
+                                    <span class="interest-tag">Piano</span>
+                                    <span class="interest-tag">Concerts</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="profile-card">
+                            <div class="profile-image">
+                                <img src="my pictures/WhatsApp Image 2025-05-20 at 10.20.59_01433c8f.jpg" alt="Profile">
+                                <div class="online-status online"></div>
+                                <div class="profile-actions">
+                                    <button class="btn-like"><i class="fas fa-heart"></i></button>
+                                    <button class="btn-message"><i class="fas fa-comment"></i></button>
+                                </div>
+                            </div>
+                            <div class="profile-info">
+                                <h3>David, 22</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> 15 miles away</p>
+                                <div class="profile-bio">
+                                    <p>Tech entrepreneur who enjoys reading, hiking, and discussing philosophy.</p>
+                                </div>
+                                <div class="interests">
+                                    <span class="interest-tag">Tech</span>
+                                    <span class="interest-tag">Reading</span>
+                                    <span class="interest-tag">Hiking</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="profile-card">
+                            <div class="profile-image">
+                                <img src="my pictures/WhatsApp Image 2025-05-20 at 10.51.53_8f4f7469.jpg" alt="Profile">
+                                <div class="online-status offline"></div>
+                                <div class="profile-actions">
+                                    <button class="btn-like"><i class="fas fa-heart"></i></button>
+                                    <button class="btn-message"><i class="fas fa-comment"></i></button>
+                                </div>
+                            </div>
+                            <div class="profile-info">
+                                <h3>Emma, 27</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> 20 miles away</p>
+                                <div class="profile-bio">
+                                    <p>Yoga instructor and animal lover. Looking for someone kind and compassionate.</p>
+                                </div>
+                                <div class="interests">
+                                    <span class="interest-tag">Yoga</span>
+                                    <span class="interest-tag">Animals</span>
+                                    <span class="interest-tag">Meditation</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="profile-card">
+                            <div class="profile-image">
+                                <img src="my pictures/WhatsApp Image 2025-05-20 at 10.51.55_134f2dce.jpg " alt="profile">
+                                <div class="online-status online"></div>
+                                <div class="profile-actions">
+                                    <button class="btn-like"><i class="fas fa-heart"></i></button>
+                                    <button class="btn-message"><i class="fas fa-comment"></i></button>
+                                </div>
+                            </div>
+                            <div class="profile-info">
+                                <h3>Ryan, 34</h3>
+                                <p><i class="fas fa-map-marker-alt"></i> 7 miles away</p>
+                                <div class="profile-bio">
+                                    <p>Outdoorsy guy who loves camping, fishing, and spending time in nature.</p>
+                                </div>
+                                <div class="interests">
+                                    <span class="interest-tag">Camping</span>
+                                    <span class="interest-tag">Fishing</span>
+                                    <span class="interest-tag">Outdoors</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pagination">
+                        <button class="btn btn-outline"><i class="fas fa-chevron-left"></i> Previous</button>
+                        <div class="page-numbers">
+                            <span class="active">1</span>
+                            <span>2</span>
+                            <span>3</span>
+                            <span>...</span>
+                            <span>10</span>
+                        </div>
+                        <button class="btn btn-outline">Next <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <span class="heart-icon">❤</span>LoveLink
+                    </a>
+                    <p>Connecting hearts since 2023</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="careers.html">Careers</a></li>
+                            <li><a href="press.html">Press</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="safety.html">Safety Tips</a></li>
+                            <li><a href="blog.html">Dating Blog</a></li>
+                            <li><a href="faq.html">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="privacy.html">Privacy</a></li>
+                            <li><a href="terms.html">Terms</a></li>
+                            <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2023 LoveLink. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

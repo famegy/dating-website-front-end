@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Membership - LoveLink</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="heart-icon">❤</span>LoveLink
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="browse.html">Browse</a></li>
+                    <li><a href="matches.html">Matches</a></li>
+                    <li><a href="messages.html">Messages</a></li>
+                    <li><a href="profile.html">My Profile</a></li>
+                </ul>
+                <div class="nav-user">
+                    <div class="user-menu">
+                        <img src="images/user-avatar.jpg" alt="User" class="user-avatar">
+                        <i class="fas fa-chevron-down"></i>
+                        <div class="dropdown-menu">
+                            <a href="profile.html">Profile</a>
+                            <a href="settings.html">Settings</a>
+                            <a href="premium.html" class="active">Upgrade to Premium</a>
+                            <a href="logout.html">Log Out</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="premium-page">
+        <div class="container">
+            <section class="premium-hero">
+                <div class="hero-content">
+                    <h1>Unlock Premium Features</h1>
+                    <p class="subtitle">Get more matches, better connections, and the full LoveLink experience</p>
+                    <div class="premium-badge">
+                        <span>Most Popular</span>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/premium-hero.png" alt="Premium Membership">
+                </div>
+            </section>
+
+            <section class="benefits-section">
+                <h2 class="section-title">Why Go Premium?</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Priority Likes</h3>
+                        <p>Jump to the top of search results and get seen by more potential matches</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>See Who Likes You</h3>
+                        <p>Find out who's interested in you before you swipe</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Travel Mode</h3>
+                        <p>Match with people in other cities before you arrive</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-comment-dots"></i>
+                        </div>
+                        <h3>Unlimited Messages</h3>
+                        <p>Chat with all your matches without restrictions</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-user-secret"></i>
+                        </div>
+                        <h3>Incognito Mode</h3>
+                        <p>Browse profiles anonymously</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Advanced Insights</h3>
+                        <p>Get detailed statistics about your profile performance</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pricing-section">
+                <h2 class="section-title">Choose Your Plan</h2>
+                <div class="pricing-tabs">
+                    <button class="tab-btn active" data-tab="monthly">Monthly</button>
+                    <button class="tab-btn" data-tab="3months">3 Months</button>
+                    <button class="tab-btn" data-tab="6months">6 Months</button>
+                    <button class="tab-btn" data-tab="yearly">Yearly</button>
+                </div>
+
+                <div class="pricing-plans">
+                    <div class="plan-card">
+                        <h3>Standard</h3>
+                        <div class="price">
+                            <span class="amount">$29.99</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> Unlimited Likes</li>
+                            <li><i class="fas fa-check"></i> See Who Likes You</li>
+                            <li><i class="fas fa-check"></i> 5 Super Likes per week</li>
+                            <li><i class="fas fa-check"></i> 1 Profile Boost per month</li>
+                            <li><i class="fas fa-check"></i> Basic Insights</li>
+                        </ul>
+                        <button class="btn btn-outline btn-block">Select Plan</button>
+                    </div>
+
+                    <div class="plan-card featured">
+                        <div class="popular-badge">Best Value</div>
+                        <h3>Premium</h3>
+                        <div class="price">
+                            <span class="amount">$19.99</span>
+                            <span class="period">/month</span>
+                            <span class="billed">Billed $119.94 every 6 months</span>
+                        </div>
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> Everything in Standard</li>
+                            <li><i class="fas fa-check"></i> Unlimited Super Likes</li>
+                            <li><i class="fas fa-check"></i> 1 Profile Boost per week</li>
+                            <li><i class="fas fa-check"></i> Travel Mode</li>
+                            <li><i class="fas fa-check"></i> Advanced Insights</li>
+                            <li><i class="fas fa-check"></i> Read Receipts</li>
+                        </ul>
+                        <button class="btn btn-primary btn-block">Select Plan</button>
+                    </div>
+
+                    <div class="plan-card">
+                        <h3>Platinum</h3>
+                        <div class="price">
+                            <span class="amount">$14.99</span>
+                            <span class="period">/month</span>
+                            <span class="billed">Billed $179.88 annually</span>
+                        </div>
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> Everything in Premium</li>
+                            <li><i class="fas fa-check"></i> Unlimited Profile Boosts</li>
+                            <li><i class="fas fa-check"></i> Incognito Mode</li>
+                            <li><i class="fas fa-check"></i> Priority Customer Support</li>
+                            <li><i class="fas fa-check"></i> Monthly Profile Review</li>
+                            <li><i class="fas fa-check"></i> Exclusive Events</li>
+                        </ul>
+                        <button class="btn btn-outline btn-block">Select Plan</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="testimonials-section">
+                <h2 class="section-title">Success Stories</h2>
+                <div class="testimonials">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Going Premium changed everything for me. I got 3x more matches and met my current partner within a month!"</p>
+                            <div class="author">
+                                <img src="images/testimonial1.jpg" alt="Sarah">
+                                <div>
+                                    <h4>Sarah & Mark</h4>
+                                    <p>Together for 1 year</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The travel mode helped me meet amazing people when I moved cities. Worth every penny!"</p>
+                            <div class="author">
+                                <img src="images/testimonial2.jpg" alt="James">
+                                <div>
+                                    <h4>James</h4>
+                                    <p>Premium Member</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Seeing who liked me saved so much time. I could focus on people who were genuinely interested."</p>
+                            <div class="author">
+                                <img src="images/testimonial3.jpg" alt="Emma">
+                                <div>
+                                    <h4>Emma & David</h4>
+                                    <p>Engaged</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="faq-section">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            What payment methods do you accept?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We accept all major credit cards (Visa, MasterCard, American Express), PayPal, and in some regions, Apple Pay and Google Pay.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Can I cancel my subscription anytime?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, you can cancel anytime. If you cancel during a billing period, you'll retain Premium benefits until the end of that period.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Is there a free trial?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We occasionally offer free trials for new members. Check our promotions page or your email for current offers.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            How does the refund policy work?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We offer a 14-day money-back guarantee for first-time subscribers. After that, all payments are non-refundable.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Will my matches know I'm a Premium member?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No, your Premium status is private unless you choose to display a Premium badge on your profile.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <span class="heart-icon">❤</span>LoveLink
+                    </a>
+                    <p>Connecting hearts since 2023</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="careers.html">Careers</a></li>
+                            <li><a href="press.html">Press</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="safety.html">Safety Tips</a></li>
+                            <li><a href="blog.html">Dating Blog</a></li>
+                            <li><a href="faq.html">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="privacy.html">Privacy</a></li>
+                            <li><a href="terms.html">Terms</a></li>
+                            <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2023 LoveLink. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Premium page specific JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Pricing tabs functionality
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Here you would typically update prices based on selected tab
+                    // This is just frontend demo - actual implementation would fetch prices
+                });
+            });
+
+            // FAQ accordion functionality
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    const icon = this.querySelector('i');
+                    
+                    // Toggle answer visibility
+                    answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+                    
+                    // Rotate icon
+                    icon.classList.toggle('fa-chevron-up');
+                    icon.classList.toggle('fa-chevron-down');
+                });
+            });
+
+            // Plan selection buttons
+            const planButtons = document.querySelectorAll('.plan-card .btn');
+            planButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Here you would typically redirect to checkout or show payment modal
+                    alert('This would redirect to payment processing in a real implementation');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
